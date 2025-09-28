@@ -14,8 +14,8 @@
 
     const selection = document.querySelector("select[id='mk-font-select'");
 
-    selection.querySelectorAll("option").forEach(value => {
-        value.setAttribute("data-vip", "0");
-        value.innerText = value.innerText.replace(/ 🔒/,'');
+    selection.querySelectorAll("option").forEach(option => {
+        option.setAttribute("data-vip", "0");
+        option.innerText = option.innerText.replace(/ 🔒/,'');
     })
 })();
